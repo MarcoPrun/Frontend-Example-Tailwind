@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Vidéo -->
+    <header class="w-full h-screen -mb-20 sm:-mb-30 md:-mb-32 xl:-mb-32 2xl:-mb-36">
+        <video class="h-full w-full object-cover" autoplay muted loop> <!-- autoplay muted loop-->
+            <source src="vidéos-hp/DANIEL_ESSA_MONTAGE_GLOBALE_MASTER_1920X1080_7mo.mp4" type="video/mp4">
+            <source src="vidéos-hp/DANIEL_ESSA_MONTAGE_GLOBALE_MASTER_1920X1080_WebM.webm" type="video/webm">
+        </video>
+    </header>
+    <!-- barre de navigation -->
+    <nav id="nav" class="flex justify-around items-center py-5 sticky top-0 transition-all z-50">   
+        <div class="flex-1 flex justify-center items-center">
+            <a href="#">
+                <div class="bg-black w-5 h-px my-2"></div>
+                <div class="bg-black w-5 h-px my-2"></div>
+            </a>
+            <div class="font-raj ml-5 hidden lg:block">MENU</div>
+        </div>
+        <div class="flex justify-center items-center flex-col w-1/2">
+            <img class="w-3/4 xl:w-1/2" src="images/logo-daniel-essa.png" alt="">
+            <span class="text-xxs md:text-xs lg:text-sm">French Luxury Brand Handmade In Italy</span>
+        </div>
+        <div class="flex-1 flex justify-center items-center">
+            <span class="text-sm">FR</span> <span class="hidden lg:inline text-sm mx-1">|</span> <span class="hidden lg:inline text-sm">EN</span>
+            <img class="ml-2" src="pictos/Calque 1.svg" alt="">
+        </div>
+    </nav>
+    <!-- collection homme et femme -->
+    <section class="mt-4 md:mt-8 grid md:grid-cols-2 gap-4">
+        <div class="relative flex justify-center items-center">
+            <a href="#"><img src="images/ETE_BB_M_03@3x.png" alt=""></a>
+            <a class="absolute bg-white border-2 border-black px-4 py-1" href="#">COLLECTION HOMME</a>
+        </div>
+        <div class="relative flex justify-center items-center">
+            <a href="#"><img src="images/ETE_BB_W_03@3x.png" alt=""></a>
+            <a class="absolute bg-white border-2 border-black px-4 py-1" href="#">COLLECTION FEMME</a>
+        </div>
+    </section>
+    <!-- vidéo défilé -->
+    <video class="h-96 md:h-full md:w-full object-cover my-10" autoplay muted loop> <!-- autoplay muted loop-->
+        <source src="vidéos-hp/Video_defile.mp4" type="video/mp4">
+        <source src="vidéos-hp/Video_defile.webm" type="video/webm">
+    </video>
+    <!-- section "la maison" ou "the brand" -->
+    <div class="grad-50">
+        <section class="max-w-6xl text-center grid lg:grid-cols-2 mx-auto">
+            <div class="p-5 lg:p-8 flex flex-col">
+                <h2 class="title relative flex-1 flex justify-center items-center mb-12 lg:mb-0 lg:mt-20">THE BRAND</h2>
+                <div class="flex-1 flex flex-col items-center justify-center text-sm leading-7">
+                    <p>French Luxury Footwear brand, DANIEL ESSA, redefines the future of timeless statement 
+                        footwear with minimalistic details and sophisticated use of colors and materials. 
+                        Daniel Essa translates his creativity into modern day fashion icons. His designs are 
+                        complex yet sleek and functional.
+                    </p>
+                    <div class="w-full mt-10 flex justify-evenly">
+                        <a href="#"><button class="bg-white border border-black px-6 py-2 font-semibold text-xs">READ MORE</button></a>
+                        <a href="#"><button class="bg-white border border-black px-6 py-2 font-semibold text-xs">CONTACT US</button></a> 
+                    </div>
+                </div>
+            </div>
+            <div class="p-10 lg:p-16">
+                <img class="" src="images/brand.png" alt="">
+            </div>
+        </section>
+    </div>
+    <!-- section "news" -->
+    <section>
+        <h2 class="title relative flex justify-center items-center my-12">NEWS</h2> <!-- titre -->
+        <div class="max-w-6xl mx-auto px-4"> <!-- container -->
+            <div class="glide news"> <!-- bibliothèque GlideJs pour le slider -->
+                <div data-glide-el="track" class="glide__track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide p-8 border border-black leading-7">
+                            <div class="font-semibold text-gray-500">00/00/2020 > 00/00/2020</div>
+                            <h3 class="uppercase font-semibold">Showromm fashion week</h3>
+                            <div class="font-light">64 Boulevard Haussmann</div>
+                            <div class="font-light">75009 Paris, France</div>
+                        </li>
+                        <li class="glide__slide p-8 border border-black leading-7">
+                            <div class="font-semibold text-gray-500">00/00/2020 > 00/00/2020</div>
+                            <h3 class="uppercase font-semibold">Showromm fashion week</h3>
+                            <div class="font-light">64 Boulevard Haussmann</div>
+                            <div class="font-light">75009 Paris, France</div>
+                        </li>                        
+                        <li class="glide__slide p-8 border border-black leading-7">
+                            <div class="font-semibold text-gray-500">00/00/2020 > 00/00/2020</div>
+                            <h3 class="uppercase font-semibold">Showromm fashion week</h3>
+                            <div class="font-light">64 Boulevard Haussmann</div>
+                            <div class="font-light">75009 Paris, France</div>
+                        </li>                        
+                        <li class="glide__slide p-8 border border-black leading-7">
+                            <div class="font-semibold text-gray-500">00/00/2020 > 00/00/2020</div>
+                            <h3 class="uppercase font-semibold">Showromm fashion week</h3>
+                            <div class="font-light">64 Boulevard Haussmann</div>
+                            <div class="font-light">75009 Paris, France</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider de présentation des produits -->
+    <div class="mx-auto my-10 px-4"> <!-- container -->
+        <div class="glide products"> <!-- bibliothèque GlideJs pour le slider -->
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <img src="photos-produit/chaussures1.jpg" alt="">
+                        <div class="infos pl-8 pb-4 leading-7">
+                            <h3 class="uppercase">Nom du modèle</h3>
+                            <div>€000</div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="photos-produit/chaussures2.jpg" alt="">
+                        <div class="infos pl-8 pb-4 leading-7">
+                            <h3 class="uppercase">Nom du modèle</h3>
+                            <div>€000</div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="photos-produit/chaussures3.jpg" alt="">
+                        <div class="infos pl-8 pb-4 leading-7">
+                            <h3 class="uppercase">Nom du modèle</h3>
+                            <div>€000</div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="photos-produit/chaussures4.jpg" alt="">
+                        <div class="infos pl-8 pb-4 leading-7">
+                            <h3 class="uppercase">Nom du modèle</h3>
+                            <div>€000</div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="photos-produit/chaussures5.jpg" alt="">
+                        <div class="infos pl-8 pb-4 leading-7">
+                            <h3 class="uppercase">Nom du modèle</h3>
+                            <div>€000</div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <img src="photos-produit/chaussures6.jpg" alt="">
+                        <div class="infos pl-8 pb-4 leading-7">
+                            <h3 class="uppercase">Nom du modèle</h3>
+                            <div>€000</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__arrows flex justify-center" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left focus:outline-none" data-glide-dir="<"><img class="w-7 m-4" src="pictos/left.svg" alt=""></button>
+                <button class="glide__arrow glide__arrow--right focus:outline-none" data-glide-dir=">"><img class="w-7 m-4" src="pictos/right.svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+    <!-- section contact -->
+    <section class="text-center flex flex-col items-center justify-center px-4 mx-auto max-w-6xl">
+        <h6 class="uppercase py-2 font-medium text-lg">abonnez-vous à notre newsletter</h6>
+        <p>code promo 5% offert</p>
+        <form action="" class="py-8 w-full">
+            <input class="text-center placeholder-black border-b border-black p-3 w-full outline-none md:w-3/4" type="email" name="" id="" placeholder="Votre Email">
+            <button class="block mx-auto mt-10 px-6 py-1 font-medium border border-black hover:bg-black hover:text-white transition duration-300 ease-in-out" type="submit">Subscribe</button>
+        </form>
+        <img class="w-10 my-8" src="images/daniel-essa-luxuury-sneackers-handmadex2.png" alt="">
+    </section>
+    <!-- footer -->
+    <footer class="text-center bg-gray-100 px-4">
+        <ul class="flex justify-center flex-wrap py-4 max-w-7xl mx-auto">
+            <li class="uppercase text-lg border-r-2 px-4">contact</li>
+            <li class="uppercase text-lg border-r-2 px-4">mentions légales</li>
+            <li class="uppercase text-lg border-r-2 px-4">e-shop</li>
+            <li class="uppercase text-lg border-r-2 px-4">lacets</li>
+            <li class="uppercase text-lg border-r-2 px-4">instagram</li>
+            <li class="uppercase text-lg border-r-2 px-4">facebook</li>
+            <li class="uppercase text-lg border-r-2 px-4">pinterest</li>
+            <li class="uppercase text-lg px-4">youtube</li>
+        </ul>
+        <div class="text-sm pb-4">Ⓒ COPYRIGTH 2020 DANIEL ESSA - 107 AVENUE JEAN LEBAS, 59199 ROUBAIX FRANCE - office@fanielessa.com</div>
+    </footer>
+    <script>
+        var nav = document.getElementById('nav');
+        setInterval(function changeBg() {
+            var navPos = nav.getBoundingClientRect();
+            if(navPos.top === 0) {
+                nav.classList.add('mybg');
+            } else {
+                nav.classList.remove('mybg');
+            }
+        }, 100);
+    </script>
+    <script src="/node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <script src="/public/javascript/carousels.js"></script>
+
+</body>
+</html>
