@@ -26,7 +26,7 @@
             <div class="font-raj ml-5 hidden lg:block">MENU</div>
         </div>
         <div class="flex justify-center items-center flex-col w-1/2">
-            <img class="w-3/4 xl:w-1/2" src="images/logo-daniel-essa.png" alt="">
+            <img class="w-3/4 max-w-sm" src="images/logo-daniel-essa.png" alt="">
             <span class="text-xxs md:text-xs lg:text-sm">French Luxury Brand Handmade In Italy</span>
         </div>
         <div class="flex-1 flex justify-center items-center">
@@ -37,46 +37,47 @@
     <!-- collection homme et femme -->
     <section class="mt-4 md:mt-8 grid md:grid-cols-2 gap-4">
         <div class="relative flex justify-center items-center">
-            <a href="#"><img src="images/ETE_BB_M_03@3x.png" alt=""></a>
-            <a class="absolute bg-white border-2 border-black px-4 py-1" href="#">COLLECTION HOMME</a>
+            <img src="images/ETE_BB_M_03@3x.png" alt="">
+            <a class="absolute px-4 py-1 btn border-2" href="#">COLLECTION HOMME</a>
         </div>
         <div class="relative flex justify-center items-center">
-            <a href="#"><img src="images/ETE_BB_W_03@3x.png" alt=""></a>
-            <a class="absolute bg-white border-2 border-black px-4 py-1" href="#">COLLECTION FEMME</a>
+            <img src="images/ETE_BB_W_03@3x.png" alt="">
+            <a class="absolute px-4 py-1 btn border-2" href="#">COLLECTION FEMME</a>
         </div>
     </section>
-    <!-- vidéo défilé -->
-    <video class="h-96 md:h-full md:w-full object-cover my-10" autoplay muted loop> <!-- autoplay muted loop-->
+    <!-- video -->
+    <video class="h-96 md:h-full md:w-full object-cover my-20" autoplay muted loop> <!-- autoplay muted loop-->
         <source src="vidéos-hp/Video_defile.mp4" type="video/mp4">
         <source src="vidéos-hp/Video_defile.webm" type="video/webm">
     </video>
-    <!-- section "la maison" ou "the brand" -->
+    <!-- brand section -->
     <div class="grad-50">
-        <section class="max-w-6xl text-center grid lg:grid-cols-2 mx-auto">
-            <div class="p-5 lg:p-8 flex flex-col">
-                <h2 class="title relative flex-1 flex justify-center items-center mb-12 lg:mb-0 lg:mt-20">THE BRAND</h2>
-                <div class="flex-1 flex flex-col items-center justify-center text-sm leading-7">
-                    <p>French Luxury Footwear brand, DANIEL ESSA, redefines the future of timeless statement 
-                        footwear with minimalistic details and sophisticated use of colors and materials. 
-                        Daniel Essa translates his creativity into modern day fashion icons. His designs are 
-                        complex yet sleek and functional.
+        <section class="max-w-6xl text-center grid lg:grid-cols-2 mx-auto my-20">
+            <div class="flex flex-col">
+                <h2 class="title relative flex-1 flex justify-center items-center mb-12 lg:mb-0 p-5">LA MAISON</h2>
+                <div class="flex-1 flex flex-col items-center justify-center text-sm leading-7 p-5">
+                    <p>Daniel Essa est une marque française de sneakers de luxe qui bouscule les codes de la sneaker 
+                        traditionnelle grâce à ses détails minimalistes et une recherche toute particulière apportée 
+                        au choix des couleurs et des matières utilisées. Daniel Essa traduit toute sa créativité 
+                        dans l’élaboration de ses chaussures, pensées comme de véritables bijoux d’architecture, 
+                        tout en restant élégantes et fonctionnelles.
                     </p>
                     <div class="w-full mt-10 flex justify-evenly">
-                        <a href="#"><button class="bg-white border border-black px-6 py-2 font-semibold text-xs">READ MORE</button></a>
-                        <a href="#"><button class="bg-white border border-black px-6 py-2 font-semibold text-xs">CONTACT US</button></a> 
+                        <a href="#" class="btn border px-8 py-2 font-medium text-xs">LIRE LA SUITE</a>
+                        <a href="#" class="btn border px-8 py-2 font-medium text-xs">LA MAISON</a>                    
                     </div>
                 </div>
             </div>
-            <div class="p-10 lg:p-16">
+            <div class="p-5 lg:pl-20 lg:pr-5 lg:pb-16">
                 <img class="" src="images/brand.png" alt="">
             </div>
         </section>
     </div>
     <!-- section "news" -->
-    <section>
+    <section class="my-20">
         <h2 class="title relative flex justify-center items-center my-12">NEWS</h2> <!-- titre -->
         <div class="max-w-6xl mx-auto px-4"> <!-- container -->
-            <div class="glide news"> <!-- bibliothèque GlideJs pour le slider -->
+            <div class="glide news pb-20"> <!-- bibliothèque GlideJs pour le slider -->
                 <div data-glide-el="track" class="glide__track">
                     <ul class="glide__slides">
                         <li class="glide__slide p-8 border border-black leading-7">
@@ -115,7 +116,7 @@
         </div>
     </section>
     <!-- slider de présentation des produits -->
-    <div class="mx-auto my-10 px-4"> <!-- container -->
+    <div class="mx-auto my-20 px-4"> <!-- container -->
         <div class="glide products"> <!-- bibliothèque GlideJs pour le slider -->
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
@@ -170,28 +171,28 @@
         </div>
     </div>
     <!-- section contact -->
-    <section class="text-center flex flex-col items-center justify-center px-4 mx-auto max-w-6xl">
+    <section class="text-center flex flex-col items-center justify-center px-4 mx-auto max-w-6xl my-20">
         <h6 class="uppercase py-2 font-medium text-lg">abonnez-vous à notre newsletter</h6>
         <p>code promo 5% offert</p>
         <form action="" class="py-8 w-full">
             <input class="text-center placeholder-black border-b border-black p-3 w-full outline-none md:w-3/4" type="email" name="" id="" placeholder="Votre Email">
-            <button class="block mx-auto mt-10 px-6 py-1 font-medium border border-black hover:bg-black hover:text-white transition duration-300 ease-in-out" type="submit">Subscribe</button>
+            <button class="btn border block mx-auto mt-10 px-6 py-2 font-semibold text-xs" type="submit">JE M'ABONNE</button>
         </form>
-        <img class="w-10 my-8" src="images/daniel-essa-luxuury-sneackers-handmadex2.png" alt="">
+        <img class="w-10 mt-8" src="images/daniel-essa-luxuury-sneackers-handmadex2.png" alt="">
     </section>
     <!-- footer -->
     <footer class="text-center bg-gray-100 px-4">
-        <ul class="flex justify-center flex-wrap py-4 max-w-7xl mx-auto">
-            <li class="uppercase text-lg border-r-2 px-4">contact</li>
-            <li class="uppercase text-lg border-r-2 px-4">mentions légales</li>
-            <li class="uppercase text-lg border-r-2 px-4">e-shop</li>
-            <li class="uppercase text-lg border-r-2 px-4">lacets</li>
-            <li class="uppercase text-lg border-r-2 px-4">instagram</li>
-            <li class="uppercase text-lg border-r-2 px-4">facebook</li>
-            <li class="uppercase text-lg border-r-2 px-4">pinterest</li>
-            <li class="uppercase text-lg px-4">youtube</li>
+        <ul class="flex justify-center flex-wrap py-4 max-w-7xl mx-auto uppercase text-lg">
+            <li class="border-r-2 px-4"><a href="#">contact</a></li>
+            <li class="border-r-2 px-4"><a href="#">mentions légales</a></li>
+            <li class="border-r-2 px-4"><a href="#">e-shop</a></li>
+            <li class="border-r-2 px-4"><a href="#">lacets</a></li>
+            <li class="border-r-2 px-4"><a href="#">instagram</a></li>
+            <li class="border-r-2 px-4"><a href="#">facebook</a></li>
+            <li class="border-r-2 px-4"><a href="#">pinterest</a></li>
+            <li class="px-4"><a href="#">youtube</a></li>
         </ul>
-        <div class="text-sm pb-4">Ⓒ COPYRIGTH 2020 DANIEL ESSA - 107 AVENUE JEAN LEBAS, 59199 ROUBAIX FRANCE - office@fanielessa.com</div>
+        <div class="text-sm pb-4">Ⓒ COPYRIGHT 2020 DANIEL ESSA - 107 AVENUE JEAN LEBAS, 59199 ROUBAIX FRANCE - office@danielessa.com</div>
     </footer>
     <script>
         var nav = document.getElementById('nav');

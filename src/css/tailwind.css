@@ -3,16 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/** ------------------ général ----------------- **/
+
 ::placeholder {
     opacity: 1;
-}
-
-#nav.mybg {
-    background-color: #fefaef7c;
-  }
-  
-.grad-50 {
-    background: linear-gradient(180deg,#fff 0%,#fff 50%,#f5f5f5 50%,#f5f5f5 100%);
 }
 
 @layer base {
@@ -24,6 +19,7 @@
     }
 }
 
+/* title style */
 .title::before, .title::after {
     content: "";
     position: relative;
@@ -32,8 +28,23 @@
     background-color: #c7c7c7;
     margin: 0 20px;
 }
+/* button style */
+.btn {
+    @apply bg-white border-black hover:bg-black hover:text-white transition duration-300 ease-in-out;
+}
 
-/* animation glide */
+/** ----------------------------------- **/
+
+/* nav barre class pour js */
+#nav.mybg {
+    background-color: #fefaef7c;
+}
+/* gradiant pour "la maison" */
+.grad-50 {
+    background: linear-gradient(180deg,#fff 0%,#fff 50%,#f5f5f5 50%,#f5f5f5 100%);
+}
+
+/** ------------------ animation glide ----------------- **/
 
 .glide__slide {
     cursor: pointer;
@@ -72,12 +83,8 @@
     background-color: black;
 }
 
-.news {
-    padding: 0 0 80px 0;
-}
-
-
-/* product hover */
+/** ----------------------------------- **/
+/** ----------------- hover produit et stylisation ------------------ **/
 
 .products ul {
     overflow: hidden;
@@ -123,3 +130,5 @@
     transform: translateY(0);
     opacity: 1;
 }
+
+/** ----------------------------------- **/
