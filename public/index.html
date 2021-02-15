@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/tailwind.css">
     <title>Document</title>
@@ -80,25 +81,25 @@
             <div class="glide news pb-20"> <!-- bibliothèque GlideJs pour le slider -->
                 <div data-glide-el="track" class="glide__track">
                     <ul class="glide__slides">
-                        <li class="glide__slide p-8 border border-black leading-7">
+                        <li class="glide__slide p-8 border border-black leading-7" data-aos="fade-up">
                             <div class="font-semibold text-gray-500">00/00/2020 > 00/00/2020</div>
                             <h3 class="uppercase font-semibold">Showromm fashion week</h3>
                             <div class="font-light">64 Boulevard Haussmann</div>
                             <div class="font-light">75009 Paris, France</div>
                         </li>
-                        <li class="glide__slide p-8 border border-black leading-7">
+                        <li class="glide__slide p-8 border border-black leading-7" data-aos="fade-up" data-aos-delay="100">
                             <div class="font-semibold text-gray-500">00/00/2020 > 00/00/2020</div>
                             <h3 class="uppercase font-semibold">Showromm fashion week</h3>
                             <div class="font-light">64 Boulevard Haussmann</div>
                             <div class="font-light">75009 Paris, France</div>
                         </li>                        
-                        <li class="glide__slide p-8 border border-black leading-7">
+                        <li class="glide__slide p-8 border border-black leading-7" data-aos="fade-up" data-aos-delay="200">
                             <div class="font-semibold text-gray-500">00/00/2020 > 00/00/2020</div>
                             <h3 class="uppercase font-semibold">Showromm fashion week</h3>
                             <div class="font-light">64 Boulevard Haussmann</div>
                             <div class="font-light">75009 Paris, France</div>
                         </li>                        
-                        <li class="glide__slide p-8 border border-black leading-7">
+                        <li class="glide__slide p-8 border border-black leading-7" data-aos="fade-up" data-aos-delay="300">
                             <div class="font-semibold text-gray-500">00/00/2020 > 00/00/2020</div>
                             <h3 class="uppercase font-semibold">Showromm fashion week</h3>
                             <div class="font-light">64 Boulevard Haussmann</div>
@@ -121,42 +122,42 @@
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                     <li class="glide__slide">
-                        <img src="photos-produit/chaussures1.jpg" alt="">
+                        <img src="photos-produit/chaussures1.jpg" alt="" data-aos="fade-up">
                         <div class="infos pl-8 pb-4 leading-7">
                             <h3 class="uppercase">Nom du modèle</h3>
                             <div>€000</div>
                         </div>
                     </li>
                     <li class="glide__slide">
-                        <img src="photos-produit/chaussures2.jpg" alt="">
+                        <img src="photos-produit/chaussures2.jpg" alt="" data-aos="fade-up" data-aos-delay="100">
                         <div class="infos pl-8 pb-4 leading-7">
                             <h3 class="uppercase">Nom du modèle</h3>
                             <div>€000</div>
                         </div>
                     </li>
                     <li class="glide__slide">
-                        <img src="photos-produit/chaussures3.jpg" alt="">
+                        <img src="photos-produit/chaussures3.jpg" alt="" data-aos="fade-up" data-aos-delay="200">
                         <div class="infos pl-8 pb-4 leading-7">
                             <h3 class="uppercase">Nom du modèle</h3>
                             <div>€000</div>
                         </div>
                     </li>
                     <li class="glide__slide">
-                        <img src="photos-produit/chaussures4.jpg" alt="">
+                        <img src="photos-produit/chaussures4.jpg" alt="" data-aos="fade-up" data-aos-delay="300">
                         <div class="infos pl-8 pb-4 leading-7">
                             <h3 class="uppercase">Nom du modèle</h3>
                             <div>€000</div>
                         </div>
                     </li>
                     <li class="glide__slide">
-                        <img src="photos-produit/chaussures5.jpg" alt="">
+                        <img src="photos-produit/chaussures5.jpg" alt="" data-aos="fade-up" data-aos-delay="400">
                         <div class="infos pl-8 pb-4 leading-7">
                             <h3 class="uppercase">Nom du modèle</h3>
                             <div>€000</div>
                         </div>
                     </li>
                     <li class="glide__slide">
-                        <img src="photos-produit/chaussures6.jpg" alt="">
+                        <img src="photos-produit/chaussures6.jpg" alt="" data-aos="fade-up" data-aos-delay="500">
                         <div class="infos pl-8 pb-4 leading-7">
                             <h3 class="uppercase">Nom du modèle</h3>
                             <div>€000</div>
@@ -165,13 +166,13 @@
                 </ul>
             </div>
             <div class="glide__arrows flex justify-center" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left focus:outline-none" data-glide-dir="<"><img class="w-7 m-4" src="pictos/left.svg" alt=""></button>
-                <button class="glide__arrow glide__arrow--right focus:outline-none" data-glide-dir=">"><img class="w-7 m-4" src="pictos/right.svg" alt=""></button>
+                <button class="glide__arrow glide__arrow--left focus:outline-none" data-glide-dir="<" data-aos="fade-right"><img class="w-7 m-4" src="pictos/left.svg" alt=""></button>
+                <button class="glide__arrow glide__arrow--right focus:outline-none" data-glide-dir=">" data-aos="fade-left"><img class="w-7 m-4" src="pictos/right.svg" alt=""></button>
             </div>
         </div>
     </div>
     <!-- section contact -->
-    <section class="text-center flex flex-col items-center justify-center px-4 mx-auto max-w-6xl my-20">
+    <section class="text-center flex flex-col items-center justify-center px-4 mx-auto max-w-6xl my-20" data-aos="fade-up">
         <h6 class="uppercase py-2 font-medium text-lg">abonnez-vous à notre newsletter</h6>
         <p>code promo 5% offert</p>
         <form action="" class="py-8 w-full">
@@ -206,8 +207,12 @@
         }, 100);
     </script>
     <script src="/node_modules/@glidejs/glide/dist/glide.min.js"></script>
-
     <script src="/public/javascript/carousels.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          once:true
+      });
+    </script>
 </body>
 </html>
