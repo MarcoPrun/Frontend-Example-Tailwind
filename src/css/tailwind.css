@@ -132,3 +132,76 @@
 }
 
 /** ----------------------------------- **/
+
+/** ----------------- animation menu ------------------ **/
+
+/* apparition du menu */
+
+nav #menu {
+    @apply -bottom-full -left-full opacity-0 transition-all ease-in-out duration-300;
+}
+
+nav #menu.active {
+    @apply bottom-0 left-0 opacity-100;
+}
+
+/* animation du burger */
+
+nav #burger.active div:first-child {
+    transform: rotate(45deg);
+    margin-bottom: -1px;
+}
+
+nav #burger.active div:nth-child(2){
+    transform: rotate(-45deg);
+    margin-top: -1px;
+}
+
+/* changement de position du burger */
+
+nav #burger.active {
+    position: fixed;
+    margin: 2rem;
+    top: 0;
+    left: 0;
+}
+
+#menu ul {
+    display: inline-block;
+}
+
+#menu ul > li {
+    position: relative;
+    transition: all 300ms ease;
+}
+
+#menu ul li a {
+    display: block;
+}
+
+#menu ul li:hover > a {
+    color: rgb(172, 172, 172);
+}
+
+#menu > ul > li.dropdown::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 5px);
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: url('../../public/pictos/arrow-right.svg') no-repeat;
+    background-size: cover;
+}
+
+#menu > ul > li.dropdown ul {
+    position: absolute;
+    top: 0;
+    right: -150%;
+    padding: 0 3rem;
+    display: none;
+}
+
+#menu > ul > li.dropdown:hover ul {
+    display: block;
+}

@@ -19,18 +19,47 @@
     </header>
     <!-- barre de navigation -->
     <nav id="nav" class="flex justify-between items-center p-4 sticky top-0 transition-all z-50 h-32">   
-        <div class="flex-1 flex justify-start items-center px-4">
-            <a href="#">
-                <div class="bg-black w-5 h-px my-2"></div>
-                <div class="bg-black w-5 h-px my-2"></div>
+        <div class="flex justify-start items-center sm:pl-4 w-1/6"">
+            <a href="#" id="burger" class="relative z-50">
+                <div class="bg-black w-6 h-px my-2"></div>
+                <div class="bg-black w-6 h-px my-2"></div>
             </a>
-            <div class="font-raj ml-5 hidden lg:block">MENU</div>
+            <div class="font-mons font-normal ml-5 hidden lg:block">MENU</div>
         </div>
-        <div class="flex justify-center items-center flex-col w-1/2">
-            <img class="w-3/4 max-w-sm" src="images/logo-daniel-essa.png" alt="">
+        <div id="menu" class="fixed w-full md:w-1/2 h-screen bg-green-50 py-20 px-8 lg:px-20 leading-10 text-xl">
+            <ul >
+                <li class="dropdown">
+                    <a href="#">Men</a>
+                    <ul>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Runners</a></li>
+                        <li><a href="#">High Tops</a></li>
+                        <li><a href="#">Low Tops</a></li>
+                        <li><a href="#">Toi & Moi</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Women</a>
+                    <ul>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Runners</a></li>
+                        <li><a href="#">High Tops</a></li>
+                        <li><a href="#">Low Tops</a></li>
+                        <li><a href="#">Toi & Moi</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">The Brand</a></li>
+                <li><a href="#">Lookbook</a></li>
+                <li><a href="#">Available At</a></li>
+                <li><a href="#">Laces</a></li>
+                <li><a href="#">Last Chance</a></li>
+            </ul>
+        </div>
+        <div class="flex justify-center items-center flex-col w-4/6 max-w-sm">
+            <img class="" src="images/logo-daniel-essa.png" alt="">
             <span class="text-xxs md:text-xs lg:text-sm">French Luxury Brand Handmade In Italy</span>
         </div>
-        <div class="flex-1 flex justify-end items-center px-4">
+        <div class="flex justify-end items-center sm:pr-4 w-1/6">
             <span class="text-sm">FR</span> <span class="hidden lg:inline text-sm mx-1">|</span> <span class="hidden lg:inline text-sm">EN</span>
             <img class="ml-2" src="pictos/Calque 1.svg" alt="">
         </div>
@@ -195,17 +224,7 @@
         </ul>
         <div class="text-sm pb-4">Ⓒ COPYRIGHT 2020 DANIEL ESSA - 107 AVENUE JEAN LEBAS, 59199 ROUBAIX FRANCE - office@danielessa.com</div>
     </footer>
-    <script>
-        var nav = document.getElementById('nav');
-        setInterval(function changeBg() {
-            var navPos = nav.getBoundingClientRect();
-            if(navPos.top === 0) {
-                nav.classList.add('mybg');
-            } else {
-                nav.classList.remove('mybg');
-            }
-        }, 100);
-    </script>
+    <script src="javascript/script.js"></script>
     <script src="/node_modules/@glidejs/glide/dist/glide.min.js"></script>
     <script src="/public/javascript/carousels.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
