@@ -1,15 +1,15 @@
 // animation changement de couleur nav bar
 
-// const nav = document.getElementById('nav');
+const nav = document.getElementById('nav');
 
-// setInterval(function changeBg() {
-//     let navPos = nav.getBoundingClientRect();
-//     if(navPos.top === 0) {
-//         nav.classList.add('mybg');
-//     } else {
-//         nav.classList.remove('mybg');
-//     }
-// }, 100);
+setInterval(function changeBg() {
+    let navPos = nav.getBoundingClientRect();
+    if(navPos.top === 0) {
+        nav.classList.add('mybg');
+    } else {
+        nav.classList.remove('mybg');
+    }
+}, 100);
 
 // animation menu
 
